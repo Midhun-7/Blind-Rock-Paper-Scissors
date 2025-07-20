@@ -1,28 +1,53 @@
-Overview
-This project is built for the Inclusive Game Design Challenge, with the goal of creating a fun, accessible, and inclusive gaming experience for children with disabilities or special needs.
+# 🎮 Voice-Controlled Rock Paper Scissors
+_A game for the Inclusive Game Design Challenge_
 
-🧠 The Idea
-We developed a voice-controlled Rock Paper Scissors game designed especially for visually impaired users. Using voice input and audio feedback, the game allows children to play independently without requiring a visual interface. It supports speech recognition for user moves and provides spoken feedback for computer choices and results.
+## 🧩 Overview
+This project was built for the **Inclusive Game Design Challenge** with the goal of designing a fun, meaningful, and **accessible game for children with disabilities**, particularly those who are **visually impaired**.
 
-👥 Who It's For
-Children with visual impairments
+The game enables children to play **Rock Paper Scissors using voice commands**, eliminating the need for any visual interaction. It speaks all prompts and results using text-to-speech, making it completely audio-driven.
 
-Can be extended to include motor-impaired users (hands-free experience)
+---
 
-Designed with a focus on simplicity, independence, and fun
+## 👥 Who It's For
+Designed specifically for:
+- Children with **visual impairments** (blind or low vision)
+- Children with **motor impairments** (hands-free play)
+- Also suitable for children who prefer auditory interaction
 
-💡 Accessibility Features
-🎤 Voice commands for user interaction (via speech_recognition)
+---
 
-🔊 Text-to-speech audio feedback (via gTTS + pygame)
+## 💡 Accessibility Features
+- 🎤 **Voice recognition** using Google Speech API (`speech_recognition`)
+- 🔊 **Audio feedback** for all prompts, choices, and results (`gTTS` + `pygame`)
+- 🖱️ **No need for screen, keyboard, or mouse interaction**
+- 🧠 Simple logic and feedback structure for **low cognitive load**
 
-🎯 No need for mouse or keyboard interaction
+---
 
-🚀 Tech Stack
-Python
+## 🚀 How It Works
+1. The game introduces itself and asks for the player's move.
+2. The user **speaks** “rock”, “paper”, or “scissor”.
+3. The computer announces its choice.
+4. The winner is declared by voice.
+5. The game continues for 3 rounds, then announces the final result.
 
-gTTS (Google Text-to-Speech)
+---
 
-Pygame (for audio playback)
+## ⚙️ Tech Stack
+- **Python 3**
+- [`gTTS`](https://pypi.org/project/gTTS/) – Text-to-Speech
+- [`pygame`](https://pypi.org/project/pygame/) – Audio playback
+- [`speech_recognition`](https://pypi.org/project/SpeechRecognition/) – Voice command input
 
-SpeechRecognition + Google Speech API
+---
+
+## 📦 Installation & Run
+
+### ✅ Prerequisites
+- Python 3.x
+- Microphone & speaker enabled
+- Internet connection (for Google Speech and gTTS)
+
+### 🔧 Setup
+```bash
+pip install gTTS pygame SpeechRecognition
